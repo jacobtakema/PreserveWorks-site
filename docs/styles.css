@@ -1,0 +1,83 @@
+/* --- kleuren uit het logo / schema --- */
+:root {
+  --blue:   #1E90FF;
+  --cyan:   #17A2B8;
+  --green:  #28A745;
+  --orange: #FFC107;
+  --text:   #2F4F4F;
+  --bg:     #ffffff;
+}
+
+/* --- reset / basis --- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* --- layout --- */
+.container {
+  min-height: 100vh;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 4rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- logo --- */
+.logo-block {
+  margin-bottom: 3rem;
+}
+
+.logo {
+  max-width: 520px;
+  width: 100%;
+  height: auto;
+}
+
+/* --- tekst --- */
+.intro {
+  text-align: center;
+  max-width: 640px;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin: 0 0 0.75rem;
+}
+
+.status {
+  font-size: 0.95rem;
+  opacity: 0.75;
+  margin: 0;
+}
+
+/* --- lijn geïnspireerd op omlijsting logo --- */
+.footer-line {
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.footer-line span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background:
+    linear-gradient(
+      to right,
+      var(--blue) 0%,
+      var(--cyan) 33%,
+      var(--green) 66%,
+      var(--orange) 100%
+    );
+  border-radius: 2px;
+}
