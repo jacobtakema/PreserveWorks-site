@@ -67,6 +67,12 @@ body {
   margin-top: 4rem;
 }
 
+.site-footer {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  opacity: 0.6;
+}
+
 .footer-line span {
   display: block;
   height: 3px;
